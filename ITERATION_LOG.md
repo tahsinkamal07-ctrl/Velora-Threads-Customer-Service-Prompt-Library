@@ -139,7 +139,7 @@ Check whether this customer can get a refund or return based on our policy.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Without strict grounding, the model may use general return-policy knowledge instead of the supplied policy.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -149,7 +149,7 @@ You are a policy assistant. Compare the complaint facts against the policy text 
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Policy grounding improves, but remedy status and ambiguity handling need a fixed format and approval boundary.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 70.25/100
 
 ### v1.2 — Final high-quality version
 
@@ -158,7 +158,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to reduce policy hallucination by requiring supplied policy evidence, separating supported/not supported/uncertain remedies and blocking final financial approval.  
 **Lesson learned:** Policy prompts need source grounding and an explicit 'cannot determine' state.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 86.75/100  
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -173,7 +173,7 @@ Suggest the best solution for this customer complaint.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Recommendations may optimise for goodwill without policy, cost or approval boundaries.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 29/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -183,7 +183,7 @@ You are a complaint-resolution assistant. Based on the complaint facts, approved
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Ranking improves usefulness, but trade-offs and repeated failed remedies are not explicitly considered.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 56.5/100
 
 ### v1.2 — Final high-quality version
 
@@ -192,7 +192,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to improve first-contact resolution quality by ranking only allowed options and showing customer-effort, cost and approval trade-offs.  
 **Lesson learned:** Resolution automation should support, not replace, authorised human decisions on money and exceptions.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 84.25/100  
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -207,7 +207,7 @@ Write a polite reply to the customer resolving their complaint.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Tone may be acceptable but the response can include unsupported promises or inconsistent length.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 41/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -217,7 +217,7 @@ You are a Velora Threads customer-service writer. Draft a warm, concise complain
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Response is more usable, but channel length, blame avoidance and final factual self-check are not explicit.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 79.25/100
 
 ### v1.2 — Final high-quality version
 
@@ -226,7 +226,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to reduce agent editing and unsupported commitments through verified inputs, length limits, channel rules and a final self-check.  
 **Lesson learned:** Customer-facing automation needs both tone controls and factual/commitment controls.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 88.5/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -241,7 +241,7 @@ Decide if this complaint should be escalated and summarise it for a manager.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Escalation can become subjective because mandatory triggers and uncertainty handling are not defined.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 43.5/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -251,7 +251,7 @@ You are an escalation assistant. Use the complaint record, contact history and r
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Risk coverage improves, but the handoff needs a fixed factual structure and conservative uncertainty rule.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 57.25/100
 
 ### v1.2 — Final high-quality version
 
@@ -260,7 +260,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to improve safe escalation and reduce customer repetition by using mandatory triggers plus a structured handoff brief.  
 **Lesson learned:** Escalation prompts need conservative rules for high-risk uncertainty and a clean handoff format.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 87.25/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
