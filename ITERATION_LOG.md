@@ -37,7 +37,7 @@ Summarise this customer complaint and list the important details.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Output is likely to be readable but inconsistent; it may omit key fields or infer missing facts.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -47,7 +47,7 @@ You are a customer-service analyst at an online clothing store. Extract the orde
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** More consistent extraction, but still lacks an explicit unknown-value rule and confidence signal.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 66.5/100
 
 ### v1.2 — Final high-quality version
 
@@ -56,7 +56,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to produce a CRM-ready record with fewer unsupported inferences because unknowns, privacy and prompt-injection handling are explicit.  
 **Lesson learned:** Structured fields, unknown handling and input boundaries reduce hallucination and make automation easier.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 86.5/100  
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -71,7 +71,7 @@ Classify this customer complaint and decide how urgent it is.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Priority labels are underspecified, so similar complaints may be routed differently.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -81,7 +81,7 @@ You are a customer-service triage agent for an e-commerce clothing store. Catego
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Role and categories improve consistency, but High/Medium/Low is still too subjective for risky cases.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 67/100
 
 ### v1.2 — Final high-quality version
 
@@ -90,7 +90,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to improve routing consistency through defined categories, P1-P4 rules, JSON output, confidence and mandatory human review.  
 **Lesson learned:** Priority must be rule-based, not emotion-based; confidence and fail-safe escalation improve governance.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 90.25/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -105,7 +105,7 @@ Write a message asking the customer for any missing information.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Questions may be broad, repetitive or request unnecessary data.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -115,7 +115,7 @@ You are a customer-service agent. Using the complaint record and the information
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Question count and privacy improve, but the model still needs a rule for when no clarification is required.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 70.25/100
 
 ### v1.2 — Final high-quality version
 
@@ -124,7 +124,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to reduce unnecessary back-and-forth by asking only essential questions and returning 'no clarification needed' when appropriate.  
 **Lesson learned:** Customer effort falls when clarification is minimal, necessary and privacy-conscious.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 84.25 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
