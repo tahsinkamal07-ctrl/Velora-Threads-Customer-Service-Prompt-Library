@@ -275,7 +275,7 @@ Check this complaint response for quality before it is sent.
 
 **Change status:** Initial version.  
 **Dry-run observation:** A simple quality check may say a response is 'good' without finding specific policy/privacy defects.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -285,7 +285,7 @@ You are a quality reviewer. Check the draft complaint response for accuracy, pol
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Review is better, but without a scoring threshold the PASS decision may be inconsistent.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 68/100
 
 ### v1.2 — Final high-quality version
 
@@ -294,7 +294,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to create a more reliable quality gate through ten explicit criteria, fail-closed rules and a 20-point scoring structure.  
 **Lesson learned:** Quality assurance becomes auditable when criteria and pass/block thresholds are explicit.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 80/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -309,7 +309,7 @@ Write a follow-up message asking whether the customer is satisfied.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Message can be sent at the wrong time or to customers who should not receive automated follow-up.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 38/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -319,7 +319,7 @@ You are a customer-service follow-up writer. If the resolution is confirmed comp
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Follow-up is better, but needs opt-out/sensitivity trigger rules and a defined reopen threshold.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 62/100
 
 ### v1.2 — Final high-quality version
 
@@ -328,7 +328,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to capture cleaner satisfaction data without premature or inappropriate outreach because completion, permission and sensitivity conditions are explicit.  
 **Lesson learned:** Follow-up automation needs trigger conditions, consent controls and a recovery path for low satisfaction.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 80/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
@@ -343,7 +343,7 @@ Analyse these complaints and tell management the main problems.
 
 **Change status:** Initial version.  
 **Dry-run observation:** Summary may overstate patterns or invent percentages if the dataset is incomplete.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 31/100
 
 ### v1.1 — Structured role + context
 ```text
@@ -353,7 +353,7 @@ You are a management analyst. Using only the complaint dataset provided, identif
 **Change made:** Added business role, workflow context and a clearer task.  
 **Dry-run observation:** Management relevance improves, but observed pattern vs root-cause hypothesis still needs explicit separation.  
 **Lesson from v1.1:** More structure improves relevance, but reliable automation needs explicit constraints, output formats and exception handling.  
-**Prompt Lab score:** [enter actual score]
+**Prompt Lab score:** 70.25/100
 
 ### v1.2 — Final high-quality version
 
@@ -362,7 +362,7 @@ The full v1.2 prompt is in `PROMPT_LIBRARY.md`.
 **Change made:** Added explicit inputs, decision rules, output structure, constraints, anti-hallucination/privacy controls and human-review triggers.  
 **Dry-run observation:** Expected to produce management-ready insights with stronger data integrity because counts, denominators, limitations and hypothesis labels are required.  
 **Lesson learned:** Management analysis must distinguish evidence from hypotheses and disclose data quality limits.  
-**Prompt Lab score:** [enter actual score]  
+**Prompt Lab score:** 80/100 
 **Decision:** Select v1.2 only after its real Prompt Lab result and output quality meet your target.
 
 
